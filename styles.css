@@ -61,6 +61,9 @@ body {
   position: relative;
   height: 100vh;
   overflow: hidden;
+
+  /* Fallback image (loads first) */
+  background: url("images/hero-fallback.jpg") center/cover no-repeat;
 }
 
 /* Video fills entire background */
