@@ -6,103 +6,195 @@
   <title>Move with Henry | Northern Virginia Real Estate</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-  <header class="navbar">
-    <div class="logo">Move with Henry</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#listings">Listings</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header class="header">
+  <div class="logo">Move with Henry</div>
 
-  <section id="home" class="hero">
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#buy">Buy</a>
+    <a href="#sell">Sell</a>
+    <a href="#neighborhoods">Neighborhoods</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay">
     <div class="hero-content">
-      <h1>Real Estate with Purpose, Style, and Strategy.</h1>
-      <p>Helping buyers, sellers, and investors move with confidence across Northern Virginia.</p>
-      <a href="#contact" class="btn">Start Your Move</a>
-    </div>
-  </section>
-
-  <section id="about" class="section about">
-    <div>
-      <img src="images/henry-photo.jpg" alt="Henry Zelaya Realtor" />
-    </div>
-    <div>
-      <h2>Meet Henry</h2>
+      <p class="eyebrow">Northern Virginia Real Estate</p>
+      <h1>Move with confidence. Move with strategy. Move with Henry.</h1>
       <p>
-        I’m Henry Zelaya — Marine veteran, real estate professional, and your local Northern Virginia guide.
-        My approach is simple: clear communication, strong negotiation, and white-glove service without the pressure.
+        Buying, selling, or investing in Northern Virginia? I bring Marine Corps discipline,
+        local market knowledge, and white-glove service to every move.
       </p>
-      <p>
-        Whether you're buying your first home, selling your current one, or building wealth through real estate,
-        I help you move with strategy.
-      </p>
-    </div>
-  </section>
 
-  <section id="services" class="section">
-    <h2>How I Help</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Buy a Home</h3>
-        <p>Smart searches, strong offers, and guidance from showing to closing.</p>
-      </div>
-
-      <div class="card">
-        <h3>Sell Your Home</h3>
-        <p>Strategic pricing, clean marketing, and negotiation that protects your bottom line.</p>
-      </div>
-
-      <div class="card">
-        <h3>Invest in Real Estate</h3>
-        <p>Helping you look at numbers, opportunity, cash flow, and long-term wealth.</p>
+      <div class="hero-buttons">
+        <a href="#buy" class="btn primary">Buy a Home</a>
+        <a href="#sell" class="btn secondary">Sell Your Home</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="listings" class="section listings">
-    <h2>Featured Homes</h2>
-    <div class="cards">
-      <div class="property-card">
-        <img src="images/home-1.jpg" alt="Featured Home 1" />
-        <h3>Modern NoVA Home</h3>
-        <p>Beautiful layout, strong location, and move-in ready feel.</p>
-      </div>
+<section class="quick-search">
+  <h2>What’s Your Next Move?</h2>
 
-      <div class="property-card">
-        <img src="images/home-2.jpg" alt="Featured Home 2" />
-        <h3>Stylish Family Home</h3>
-        <p>Space, comfort, and the kind of home that feels right when you walk in.</p>
-      </div>
+  <div class="search-cards">
+    <a href="#buy" class="search-card">Buy</a>
+    <a href="#sell" class="search-card">Sell</a>
+    <a href="#contact" class="search-card">Invest</a>
+  </div>
+</section>
 
-      <div class="property-card">
-        <img src="images/home-3.jpg" alt="Featured Home 3" />
-        <h3>Investment Opportunity</h3>
-        <p>Ideal for buyers looking to build long-term real estate value.</p>
-      </div>
+<section id="about" class="section split">
+  <div class="image-box">
+    <img src="images/henry-headshot.jpg" alt="Henry Zelaya Realtor" />
+  </div>
+
+  <div class="text-box">
+    <p class="eyebrow">Meet Henry</p>
+    <h2>Real estate with discipline, style, and heart.</h2>
+    <p>
+      I’m Henry Zelaya — Marine veteran, real estate professional, investor, and local
+      Northern Virginia advisor. My mission is simple: help people make smart moves
+      without feeling overwhelmed.
+    </p>
+    <p>
+      From first-time buyers to sellers preparing for the next chapter, I focus on clear
+      communication, strong negotiation, and a smooth experience from start to close.
+    </p>
+    <a href="#contact" class="btn primary">Let’s Connect</a>
+  </div>
+</section>
+
+<section id="buy" class="section dark">
+  <p class="eyebrow">For Buyers</p>
+  <h2>Find the right home without guessing your way through the process.</h2>
+  <p>
+    I help buyers understand the market, compare homes, structure strong offers,
+    negotiate seller credits, and move with confidence — especially in competitive
+    Northern Virginia neighborhoods.
+  </p>
+</section>
+
+<section id="sell" class="section">
+  <p class="eyebrow">For Sellers</p>
+  <h2>Position your home to stand out.</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Pricing Strategy</h3>
+      <p>Data-backed pricing based on local comps, buyer behavior, and market timing.</p>
     </div>
-  </section>
 
-  <section id="contact" class="section contact">
-    <h2>Ready to Move?</h2>
-    <p>Let’s talk about your next move in Northern Virginia.</p>
+    <div class="card">
+      <h3>Marketing That Moves</h3>
+      <p>Clean visuals, social media strategy, storytelling, and strong listing exposure.</p>
+    </div>
 
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="tel" placeholder="Phone Number" />
-      <textarea placeholder="How can I help?" rows="5"></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
+    <div class="card">
+      <h3>Negotiation</h3>
+      <p>Protecting your bottom line while keeping the deal moving toward closing.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 Move with Henry | Northern Virginia Real Estate</p>
-  </footer>
+<section class="valuation">
+  <div>
+    <p class="eyebrow">Home Value</p>
+    <h2>Curious what your home could sell for?</h2>
+    <p>
+      Get a local, real-world home value review — not just an automated estimate.
+    </p>
+  </div>
+
+  <a href="#contact" class="btn primary">Request Home Value</a>
+</section>
+
+<section class="section">
+  <p class="eyebrow">Featured Properties</p>
+  <h2>Homes Worth a Closer Look</h2>
+
+  <div class="property-grid">
+    <div class="property-card">
+      <img src="images/property-1.jpg" alt="Northern Virginia Home" />
+      <h3>Modern Northern Virginia Home</h3>
+      <p>Luxury finishes, smart layout, and strong location.</p>
+    </div>
+
+    <div class="property-card">
+      <img src="images/property-2.jpg" alt="Family Home" />
+      <h3>Move-In Ready Family Home</h3>
+      <p>Comfort, space, and everyday function.</p>
+    </div>
+
+    <div class="property-card">
+      <img src="images/property-3.jpg" alt="Investment Property" />
+      <h3>Investment Opportunity</h3>
+      <p>Built for buyers thinking long term.</p>
+    </div>
+  </div>
+</section>
+
+<section id="neighborhoods" class="section neighborhoods">
+  <p class="eyebrow">Local Expertise</p>
+  <h2>Northern Virginia Neighborhoods</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Woodbridge</h3>
+      <p>Convenient, growing, and full of opportunity for buyers and sellers.</p>
+    </div>
+
+    <div class="card">
+      <h3>Fairfax County</h3>
+      <p>Established communities, strong commuter access, and desirable amenities.</p>
+    </div>
+
+    <div class="card">
+      <h3>Alexandria</h3>
+      <p>Historic charm, lifestyle, location, and strong buyer demand.</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <p class="eyebrow">Client Experience</p>
+  <h2>White-glove service. Real communication. No pressure.</h2>
+  <p>
+    “Henry made the process feel smooth, clear, and personal from start to finish.”
+  </p>
+</section>
+
+<section id="contact" class="section contact">
+  <p class="eyebrow">Let’s Talk</p>
+  <h2>Ready to make your next move?</h2>
+
+  <form>
+    <input type="text" placeholder="Name" required />
+    <input type="email" placeholder="Email" required />
+    <input type="tel" placeholder="Phone" />
+    <select>
+      <option>Interested in...</option>
+      <option>Buying</option>
+      <option>Selling</option>
+      <option>Investing</option>
+      <option>Renting</option>
+    </select>
+    <textarea placeholder="Tell me about your move"></textarea>
+    <button type="submit" class="btn primary">Send Message</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <h3>Move with Henry</h3>
+  <p>Wasinger & Co Properties</p>
+  <p>9015 Silverbrook Rd, Suite 106, Fairfax Station, VA 22039</p>
+  <p>All information deemed reliable but not guaranteed.</p>
+</footer>
 
 </body>
 </html>
