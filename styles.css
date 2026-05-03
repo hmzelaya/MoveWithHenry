@@ -1,5 +1,4 @@
 :root {
-  /* Core Colors (Wasinger-style) */
   --black: #0e0e0e;
   --charcoal: #1c1c1c;
   --warm-gray: #6e6e6e;
@@ -10,14 +9,12 @@
   --white: #ffffff;
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   background: var(--cream);
@@ -25,7 +22,6 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
 .header {
   position: fixed;
   top: 0;
@@ -56,14 +52,11 @@ body {
   color: var(--accent-gold);
 }
 
-/* ================= HERO VIDEO SECTION ================= */
-
+/* Hero */
 .hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
-
-  /* Fallback image */
   background: url("images/hero-fallback.jpg") center/cover no-repeat;
 }
 
@@ -114,7 +107,6 @@ body {
   gap: 16px;
 }
 
-/* Buttons */
 .btn {
   display: inline-block;
   padding: 14px 28px;
@@ -139,7 +131,6 @@ body {
   color: var(--white);
 }
 
-/* Quick Search */
 .quick-search {
   background: var(--white);
   padding: 60px 8%;
@@ -165,7 +156,6 @@ body {
   color: var(--black);
 }
 
-/* Sections */
 .section {
   padding: 90px 8%;
 }
@@ -176,7 +166,6 @@ body {
   font-weight: 500;
 }
 
-/* Split Layout */
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -191,7 +180,6 @@ body {
   object-fit: cover;
 }
 
-/* Cards */
 .cards,
 .property-grid {
   display: grid;
@@ -213,7 +201,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Listings */
 .property-card img {
   width: 100%;
   height: 260px;
@@ -221,7 +208,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* Dark Section */
 .dark {
   background: var(--black);
   color: var(--white);
@@ -231,7 +217,6 @@ body {
   color: var(--white);
 }
 
-/* Valuation Section */
 .valuation {
   padding: 80px 8%;
   background: var(--charcoal);
@@ -245,14 +230,12 @@ body {
   color: var(--white);
 }
 
-/* Testimonials */
 .testimonial {
   background: var(--light-gray);
   padding: 90px 12%;
   text-align: center;
 }
 
-/* Contact */
 .contact {
   background: var(--black);
   color: var(--white);
@@ -283,7 +266,6 @@ textarea {
   min-height: 120px;
 }
 
-/* Footer */
 .footer {
   background: #080808;
   color: var(--white);
@@ -295,8 +277,7 @@ textarea {
   color: var(--accent-gold);
 }
 
-/* ================= MOBILE ================= */
-
+/* Mobile */
 @media (max-width: 900px) {
   .header {
     flex-direction: column;
@@ -320,8 +301,10 @@ textarea {
   .hero-buttons {
     flex-direction: column;
   }
+}
 
-  /* Disable video on mobile for performance */
+/* Only hide video on smaller phones */
+@media (max-width: 600px) {
   .hero-video {
     display: none;
   }
