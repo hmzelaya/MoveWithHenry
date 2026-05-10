@@ -208,7 +208,7 @@ body {
   background: var(--white);
 }
 
-/* UPDATED ABOUT IMAGE SECTION */
+/* About Image */
 .image-box {
   width: 100%;
   overflow: hidden;
@@ -288,6 +288,7 @@ body {
   text-align: center;
 }
 
+/* Contact */
 .contact {
   background: var(--black);
   color: var(--white);
@@ -298,24 +299,90 @@ body {
   color: var(--white);
 }
 
-form {
-  max-width: 600px;
-  margin: 30px auto 0;
+/* Formspree Form */
+.fs-form {
+  max-width: 900px;
+  margin: 36px auto 0;
   display: grid;
-  gap: 14px;
+  gap: 24px;
+  text-align: left;
 }
 
-input,
-select,
-textarea {
+.fs-layout__2-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fs-form fieldset {
+  border: 1px solid rgba(194, 164, 109, 0.45);
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.fs-form legend {
+  color: var(--accent-gold);
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0 8px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.fs-field {
+  margin-bottom: 16px;
+}
+
+.fs-label {
+  display: block;
+  color: var(--white);
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.fs-input,
+.fs-select,
+.fs-textarea {
+  width: 100%;
   padding: 14px;
-  border: none;
+  border: 1px solid rgba(194, 164, 109, 0.35);
+  background: var(--white);
+  color: var(--charcoal);
   font-size: 1rem;
-  background: #ffffff;
+  font-family: inherit;
 }
 
-textarea {
-  min-height: 120px;
+.fs-input:focus,
+.fs-select:focus,
+.fs-textarea:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 2px rgba(194, 164, 109, 0.25);
+}
+
+.fs-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.fs-button-group {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.fs-button {
+  background: var(--accent-gold);
+  color: var(--black);
+  padding: 14px 34px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+}
+
+.fs-button:hover {
+  background: #d0b27a;
+  transform: translateY(-2px);
 }
 
 .footer {
@@ -334,13 +401,14 @@ textarea {
   margin-bottom: 8px;
 }
 
-/* Mobile */
+/* Tablet */
 @media (max-width: 1100px) {
   .neighborhoods .cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Mobile */
 @media (max-width: 900px) {
   .header {
     flex-direction: column;
@@ -365,8 +433,12 @@ textarea {
   .property-grid,
   .search-cards,
   .valuation,
-  .neighborhoods .cards {
+  .neighborhoods .cards,
+  .fs-layout__2-column {
     grid-template-columns: 1fr;
+  }
+
+  .valuation {
     flex-direction: column;
   }
 
@@ -394,5 +466,9 @@ textarea {
 
   .hero p {
     font-size: 1rem;
+  }
+
+  .fs-form fieldset {
+    padding: 18px;
   }
 }
