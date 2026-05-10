@@ -224,19 +224,107 @@
   <p class="eyebrow">Let’s Talk</p>
   <h2>Ready to make your next move?</h2>
 
-  <form>
-    <input type="text" placeholder="Name" required />
-    <input type="email" placeholder="Email" required />
-    <input type="tel" placeholder="Phone" />
-    <select>
-      <option>Interested in...</option>
-      <option>Buying</option>
-      <option>Selling</option>
-      <option>Investing</option>
-      <option>Renting</option>
-    </select>
-    <textarea placeholder="Tell me about your move"></textarea>
-    <button type="submit" class="btn primary">Send Message</button>
+  <form
+    action="https://formspree.io/f/xpqbonoq"
+    method="POST"
+    class="fs-form fs-layout__2-column"
+  >
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <div class="fs-field">
+        <label class="fs-label" for="name">Full Name</label>
+        <input class="fs-input" type="text" id="name" name="name" autocomplete="name" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Address Details</legend>
+
+      <div class="fs-field">
+        <label class="fs-label" for="address-1">Address</label>
+        <input class="fs-input" type="text" id="address-1" name="address-1" autocomplete="address-line1">
+      </div>
+
+      <div class="fs-field">
+        <label class="fs-label" for="city">City</label>
+        <input class="fs-input" type="text" id="city" name="city" autocomplete="address-level2">
+      </div>
+
+      <div class="fs-field">
+        <label class="fs-label" for="state">State</label>
+        <input class="fs-input" type="text" id="state" name="state" autocomplete="address-level1">
+      </div>
+
+      <div class="fs-field">
+        <label class="fs-label" for="zip-code">Zip Code</label>
+        <input class="fs-input" type="text" id="zip-code" name="zip-code" autocomplete="postal-code">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact Information</legend>
+
+      <div class="fs-field">
+        <label class="fs-label" for="email">Email</label>
+        <input class="fs-input" type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+
+      <div class="fs-field">
+        <label class="fs-label" for="phone">Phone Number</label>
+        <input class="fs-input" type="tel" id="phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Real Estate Details</legend>
+
+      <div class="fs-field">
+        <label class="fs-label" for="service-request">I’m interested in...</label>
+        <select class="fs-select" id="service-request" name="services">
+          <option value="buying">Buying</option>
+          <option value="selling">Selling</option>
+          <option value="investing">Investing</option>
+          <option value="renting">Renting</option>
+          <option value="home-value">Home Value Review</option>
+        </select>
+      </div>
+
+      <div class="fs-field">
+        <label class="fs-label" for="start-date">Ideal Timeline</label>
+        <input class="fs-input" type="date" id="start-date" name="start-date">
+      </div>
+
+      <div class="fs-field">
+        <label class="fs-label" for="learn">How did you hear about me?</label>
+        <select class="fs-select" id="learn" name="learn">
+          <option value="google">Google/Search</option>
+          <option value="social-media">Social Media</option>
+          <option value="referral">Referral</option>
+          <option value="open-house">Open House</option>
+          <option value="website">Website</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Message</legend>
+
+      <div class="fs-field">
+        <label class="fs-label" for="message">Tell me about your move</label>
+        <textarea
+          class="fs-textarea"
+          id="message"
+          name="message"
+          placeholder="Tell me where you're looking, your timeline, and how I can help..."
+          required
+        ></textarea>
+      </div>
+    </fieldset>
+
+    <div class="fs-button-group">
+      <button class="fs-button" type="submit">Send Message</button>
+    </div>
   </form>
 </section>
 
