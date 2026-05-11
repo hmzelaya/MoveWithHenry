@@ -8,12 +8,16 @@
   gtag('config', 'G-1HK9GRRZQ2');
 </script>
 
-<!-- Select from line 1 to 9 and Copy and paste it in the code of every page of your website, 
-immediately after the <head> element. Don’t add more than one Google tag to each page.
-Put it inside <head> immeditely after <head>
+<!-- INSTRUCTIONS -->
+1. Select from line 1 to 9 and 
+2. Copy and paste it into the code of every page of your website
+3. Copy and paste it immediately after the <head> element
+4. Don’t add more than one Google tag to each page.
+5. Put it inside <head> immeditely after <head>
+
 This lets you track:
 visitors
 traffic
 where leads come from
 mobile vs desktop
-which pages people view -->
+which pages people view
