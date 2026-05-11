@@ -27,7 +27,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   padding: 10px 8%;
@@ -36,6 +36,7 @@ body {
   align-items: center;
   background: rgba(14, 14, 14, 0.92);
   z-index: 1000;
+  transition: transform 0.3s ease;
 }
 
 .logo a {
