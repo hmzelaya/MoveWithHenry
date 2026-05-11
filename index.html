@@ -346,5 +346,24 @@
   <p>All information is deemed reliable but not guaranteed and should be independently reviewed and verified.</p>
 </footer>
 
+  <script>
+  let lastScrollTop = 0;
+  const header = document.querySelector('.header');
+
+  window.addEventListener('scroll', function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      header.style.transform = 'translateY(-100%)';
+    } else {
+      // Scrolling up
+      header.style.transform = 'translateY(0)';
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+</script>
+  
 </body>
 </html>
