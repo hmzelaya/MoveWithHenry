@@ -436,11 +436,14 @@ body {
 
 @media (max-width: 900px) {
   .header {
-    flex-direction: column;
-    gap: 8px;
-    position: static;
-    padding: 8px 5%;
-  }
+  flex-direction: column;
+  gap: 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 5%;
+}
 
   .logo a {
     justify-content: center;
